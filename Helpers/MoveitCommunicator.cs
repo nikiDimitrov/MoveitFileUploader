@@ -1,15 +1,6 @@
 ﻿using MoveitLocalFolderScanner.Models;
 using Newtonsoft.Json.Linq;
-using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
 using System.Net.Http.Headers;
-using System.Net.Http.Json;
-using System.Text;
-using System.Text.Json;
-using System.Threading.Tasks;
-using XSystem.Security.Cryptography;
 
 namespace MoveitLocalFolderScanner.Helpers
 {

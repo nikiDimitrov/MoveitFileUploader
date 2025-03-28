@@ -83,13 +83,6 @@ namespace MoveitLocalFolderScanner.Controller
                 return;
             }
 
-            string[] files = Directory.GetFiles(folderPath);
-            if (files == null || files.Length == 0)
-            {
-                view.DisplayError("Folder does not contain any files to upload!");
-                return;
-            }
-
             this.folderPath = folderPath;
             view.DisplaySuccess("Folder path set successfully!");
         }
@@ -127,7 +120,7 @@ namespace MoveitLocalFolderScanner.Controller
        
             if(missingFiles.Count == 0)
             {
-                view.DisplayMessage("No new files detected!");
+                view.DisplayMessage("No new files detected or directory is empty!");
             }
             else
             {
